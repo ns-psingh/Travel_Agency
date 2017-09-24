@@ -43,7 +43,48 @@ public class linkL {
         }
     }
     /*  Function to delete an element at position  */
+    public boolean credsearch(String username,String password)
+    {
+        System.out.print("\nSearching");
+        if (size == 0)
+        {
+            System.out.print("Size 0 hai");
+            System.out.print("Not Found\n");
+            return false;
+        }
+        if (start.getLink() == null)
+        {
+            System.out.print("Size 1 hai");
+            if((start.getData().getUsername().equals(username))&&(start.getData().getPassword().equals(password)))
+            {
+                System.out.print("Found\n");
+                return true;}
+            return false;
+        }
 
+
+        Node ptr = start;
+        if((start.getData().getUsername().equals(username))&&(start.getData().getPassword().equals(password)))
+        {
+
+            System.out.print("Found");
+            return true;
+        }
+        ptr = start.getLink();
+        while (ptr.getLink() != null) {
+            if((ptr.getData().getUsername().equals(username))&&(ptr.getData().getPassword().equals(password)))
+                return true;
+            System.out.print(ptr.getData().getUsername() + "->");
+            ptr = ptr.getLink();
+        }
+        if((ptr.getData().getUsername().equals(username))&&(ptr.getData().getPassword().equals(password)))
+        {
+            System.out.print("Found");
+            return true;
+        }
+        System.out.print(ptr.getData().getUsername() + "\n");
+        return false;
+    }
     /*  Function to display elements  */
     public boolean usernamesearch(userinfo u)
     {

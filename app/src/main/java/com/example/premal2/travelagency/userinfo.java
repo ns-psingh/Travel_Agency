@@ -19,6 +19,7 @@ public class userinfo {
     {
         return username;
     }
+    public String getPassword() {return password;}
     public void setter(String name,String email,String username,String password,int date,int month,int year)
     {
         this.name=name;
