@@ -1,17 +1,14 @@
 package com.example.premal2.travelagency;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class signup extends MainActivity  {
     @Override
@@ -32,6 +29,16 @@ public class signup extends MainActivity  {
         final TextView tpass= (TextView) findViewById(R.id.passwordtext);
         final TextView tuser=(TextView) findViewById(R.id.usernametext);
         final TextView tdate=(TextView) findViewById(R.id.dobtext);
+        ImageButton img=(ImageButton)findViewById(R.id.bckbtn);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("mytag","fk");
+                Intent intent = new Intent(signup.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
+            }
+        });
         Button signup=(Button) findViewById(R.id.signup);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,4 +162,5 @@ public class signup extends MainActivity  {
     public void onBackPressed() {
         // Do Here what ever you want do on back press;
     }
+
 }

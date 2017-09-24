@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
 
     static public linkL userdb=new linkL();
+    static public userinfo current=new userinfo();
     static public String number="HELLO";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +25,47 @@ public class MainActivity extends AppCompatActivity {
         Log.d("mytag",number);
         final EditText euser=(EditText) findViewById(R.id.username);
         final EditText epass=(EditText) findViewById(R.id.password);
+        final TextView tuser= (TextView) findViewById(R.id.usertext);
+        final TextView tpass= (TextView) findViewById(R.id.passtext);
         final Button loginbtn=(Button) findViewById(R.id.login);
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String usernam=euser.getText().toString();
                 final String passwor=epass.getText().toString();
-                if(userdb.credsearch(usernam,passwor))
-                {
-                    Toast.makeText(getApplicationContext(),"Credentials working for "+usernam,Toast.LENGTH_SHORT).show();
+                int flag=0;
+                if(euser.getText().toString().trim().length() == 0) {
+                    tuser.setText("*Enter Username (Required)");
+                    tuser.setTextColor(0xAAFF0000);
+                    flag = 1;
                 }
+                else
+                {
+                    tuser.setText("Enter Username");
+                    tuser.setTextColor(0xAA3F51B5);
+
+                }
+
+                if(epass.getText().toString().trim().length() == 0) {
+                    tpass.setText("*Enter Password(Required)");
+                    tpass.setTextColor(0xAAFF0000);
+                    flag = 1;
+                }
+                else
+                {
+                    tpass.setText("Enter Password");
+                    tpass.setTextColor(0xAA3F51B5);
+
+                }
+                if(flag==0)
+                {if(userdb.credsearch(usernam,passwor))
+                {
+                    current=userdb.connect(usernam);
+                    //Toast.makeText(getApplicationContext(),"Credentials working for "+current.getUsername(),Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent(MainActivity.this,homepage.class);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
+                }}
             }
         });
         final Button signu= (Button) findViewById(R.id.signup);

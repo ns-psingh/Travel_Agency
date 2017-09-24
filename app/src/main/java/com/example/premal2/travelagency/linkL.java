@@ -43,6 +43,32 @@ public class linkL {
         }
     }
     /*  Function to delete an element at position  */
+    public userinfo connect(String username)
+    {
+        System.out.print("\nSearching");
+
+        Node ptr = start;
+        if(start.getData().getUsername().equals(username))
+        {
+
+            System.out.print("Found");
+            return start.getData();
+        }
+        ptr = start.getLink();
+        while (ptr.getLink() != null) {
+            if(ptr.getData().getUsername().equals(username))
+                return ptr.getData();
+            System.out.print(ptr.getData().getUsername() + "->");
+            ptr = ptr.getLink();
+        }
+        if(ptr.getData().getUsername().equals(username))
+        {
+            System.out.print("Found");
+            return ptr.getData();
+        }
+        System.out.print(ptr.getData().getUsername() + "\n");
+        return null;
+    }
     public boolean credsearch(String username,String password)
     {
         System.out.print("\nSearching");
