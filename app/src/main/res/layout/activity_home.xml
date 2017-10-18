@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.premal2.travelagency.home"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="267dp"
+        android:layout_height="77dp"
+        android:text="MY BOOKINGS"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="319dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="18dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="267dp"
+        android:layout_height="77dp"
+        android:text="TRAINS"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="217dp"
+        android:layout_below="@+id/flight_btn"
+        android:layout_alignLeft="@+id/flight_btn"
+        android:layout_alignStart="@+id/flight_btn"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/flight_btn"
+        android:layout_width="267dp"
+        android:layout_height="77dp"
+        android:text="FLIGHTS"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="110dp"
+        android:layout_below="@+id/name_log"
+        android:layout_alignLeft="@+id/name_log"
+        android:layout_alignStart="@+id/name_log"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/name_log"
+        android:layout_width="262dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button6"
+        android:layout_marginTop="52dp"
+        android:fontFamily="monospace"
+        android:text="Sample"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="268dp"
+        android:layout_height="57dp"
+        android:text="ACCOUNT"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="419dp"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

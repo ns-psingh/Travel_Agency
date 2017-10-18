@@ -62,10 +62,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     current=userdb.connect(usernam);
                     //Toast.makeText(getApplicationContext(),"Credentials working for "+current.getUsername(),Toast.LENGTH_SHORT).show();
-                    Intent intent= new Intent(MainActivity.this,homepage.class);
+                    Intent intent= new Intent(MainActivity.this,home.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
-                }}
+                }
+                else if(euser.getText().toString().equals("admin123")&&epass.getText().toString().equals("admin123"))
+                {
+                    startActivity(new Intent(MainActivity.this,admin.class));
+                }
+                }
             }
         });
         final Button signu= (Button) findViewById(R.id.signup);
