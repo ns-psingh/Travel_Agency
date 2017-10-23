@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -9,6 +10,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.premal2.travelagency.MainActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="© Made by Premal Singh and Sai Shourie"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="Enter Username"
@@ -72,10 +82,21 @@
         android:text="SIGN UP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:id="@+id/signup"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon"
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/passtext"
+        android:layout_toEndOf="@+id/passtext"
+        android:layout_marginTop="19dp" />
 </RelativeLayout>

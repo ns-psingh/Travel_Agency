@@ -15,14 +15,25 @@ import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
 
+    static public int init=0;
+    static public int login =0;
     static public linkL userdb=new linkL();
     static public userinfo current=new userinfo();
     static public String number="HELLO";
+    static public admininbox head=new admininbox();
+    static public int source;
+    static public int dest;
+    static public int deptday;
+    static public int retday;
+    static public flightgraph GRAPH= new flightgraph();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("mytag",number);
+        //Log.d("mytag",current.username);
+        if(init==0)
+            head.next=head;
         final EditText euser=(EditText) findViewById(R.id.username);
         final EditText epass=(EditText) findViewById(R.id.password);
         final TextView tuser= (TextView) findViewById(R.id.usertext);
@@ -77,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         signu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                login=1;
                 Intent intent=new Intent(MainActivity.this, signup.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);

@@ -22,56 +22,14 @@
     <string-array name="country_arrays">
         <item>Select</item>
         <item>Ahemdabad</item>
-        <item>Allahabad</item>
-        <item>Amritsar</item>
-        <item>Aurangabad</item>
         <item>Bangalore</item>
-        <item>Bareli</item>
-        <item>Bhubaneshwar</item>
-        <item>Bhuj</item>
         <item>Bombay</item>
         <item>Calcutta</item>
-        <item>Coimbatore</item>
-        <item>Daman</item>
-        <item>Dehradun</item>
+        <item>Chennai</item>
         <item>Delhi</item>
-        <item>Dhanbad</item>
-        <item>Gaya</item>
-        <item>Goa</item>
-        <item>Gorakhpur</item>
-        <item>Guna</item>
-        <item>Guwahati</item>
-        <item>Gwalior</item>
-        <item>Hubli</item>
         <item>Hyderabad</item>
-        <item>Imphal</item>
         <item>Indore</item>
-        <item>Jabalpur</item>
-        <item>Jaipur</item>
-        <item>Jodhpur</item>
-        <item>Kozhikode</item>
-        <item>Lucknow</item>
-        <item>Madras</item>
-        <item>Mangalore</item>
-        <item>Mysore</item>
-        <item>Nagpur</item>
-        <item>Nasik</item>
-        <item>Patna</item>
-        <item>Pondicherry</item>
-        <item>Pune</item>
-        <item>Raipur</item>
-        <item>Rajkot</item>
         <item>Ranchi</item>
-        <item>Rewa</item>
-        <item>Rourkela</item>
-        <item>Sholapur</item>
-        <item>Srinagar</item>
-        <item>Surat</item>
         <item>Thiruvanthapuram</item>
-        <item>Tirupati</item>
-        <item>Udaipur</item>
-        <item>Vadodara</item>
-        <item>Varanasi</item>
-        <item>Vishakapatnam</item>
     </string-array>
 </resources>

@@ -12,6 +12,14 @@
     tools:context="com.example.premal2.travelagency.signup">
 
     <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Made by Premal Singh and Sai Shourie"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:text="Enter Your Name:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,26 +143,17 @@
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/background_light" />
 
-    <ImageButton
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bckbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="?android:attr/homeAsUpIndicator"
-        android:id="@+id/bckbtn"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/textView23"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/front"
-
-        android:layout_alignTop="@+id/bckbtn" />
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
 
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.example.premal2.travelagency;
 
+import java.util.LinkedList;
+
 /**
  * Created by premal2 on 9/14/2017.
  */
@@ -12,6 +14,8 @@ public class userinfo {
     int date;
     int month;
     int year;
+    LinkedList<String> mes= new LinkedList<String>();
+    LinkedList<Integer> sender= new LinkedList<Integer>();
     userinfo()
     {
     }

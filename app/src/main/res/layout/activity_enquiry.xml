@@ -43,14 +43,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/cnvs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:text="Conversation with"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="18dp"
-        android:text="Conversation with" />
+        android:layout_toRightOf="@+id/back_enquiry"
+        android:layout_toEndOf="@+id/back_enquiry"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView13"
+        android:layout_below="@+id/cnvs"
         android:layout_marginTop="17dp" />
 
     <TextView
@@ -92,5 +92,16 @@
         android:layout_toRightOf="@+id/textView16"
         android:text="Manage next Enquiry"
         android:textColor="@android:color/darker_gray" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/back_enquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

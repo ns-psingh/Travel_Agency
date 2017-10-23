@@ -5,68 +5,137 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.premal2.travelagency.home"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="267dp"
-        android:layout_height="77dp"
-        android:text="MY BOOKINGS"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="319dp"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="18dp"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="267dp"
-        android:layout_height="77dp"
-        android:text="TRAINS"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="217dp"
-        android:layout_below="@+id/flight_btn"
-        android:layout_alignLeft="@+id/flight_btn"
-        android:layout_alignStart="@+id/flight_btn"
-        android:layout_marginTop="15dp" />
-
-    <Button
-        android:id="@+id/flight_btn"
-        android:layout_width="267dp"
-        android:layout_height="77dp"
-        android:text="FLIGHTS"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="110dp"
-        android:layout_below="@+id/name_log"
-        android:layout_alignLeft="@+id/name_log"
-        android:layout_alignStart="@+id/name_log"
-        android:layout_marginTop="27dp" />
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/name_log"
         android:layout_width="262dp"
         android:layout_height="55dp"
-        android:layout_alignEnd="@+id/button6"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/button6"
-        android:layout_marginTop="52dp"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:text="Sample"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="25dp" />
+        tools:layout_editor_absoluteY="25dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/flightbtn"
+        android:layout_below="@+id/name_log"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="268dp"
-        android:layout_height="57dp"
-        android:text="ACCOUNT"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="419dp"
-        android:layout_marginBottom="38dp"
+        android:id="@+id/flightbtn"
+        android:layout_width="480px"
+        android:layout_height="40px"
+        android:text="FLIGHTS"
+        android:layout_alignTop="@+id/imageButton14"
+        android:layout_toRightOf="@+id/imageButton14"
+        android:layout_above="@+id/imageButton16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton14"
+        android:layout_alignStart="@+id/imageButton14"
+        android:layout_below="@+id/imageButton14"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/trainbtn" />
+
+    <Button
+        android:id="@+id/trainbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton16"
+        android:layout_alignEnd="@+id/flightbtn"
+        android:layout_alignLeft="@+id/flightbtn"
+        android:layout_alignRight="@+id/flightbtn"
+        android:layout_alignStart="@+id/flightbtn"
+        android:layout_alignTop="@+id/imageButton16"
+        android:text="TRAINS" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton16"
+        android:layout_alignRight="@+id/imageButton16"
+        android:layout_below="@+id/imageButton16"
+        android:layout_marginTop="22dp"
+        app:srcCompat="@drawable/bookingbtn" />
+
+    <Button
+        android:id="@+id/bookingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton17"
+        android:layout_alignEnd="@+id/trainbtn"
+        android:layout_alignLeft="@+id/trainbtn"
+        android:layout_alignRight="@+id/trainbtn"
+        android:layout_alignStart="@+id/trainbtn"
+        android:layout_alignTop="@+id/imageButton17"
+        android:text="MY BOOKINGS" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton17"
+        android:layout_alignStart="@+id/imageButton17"
+        android:layout_below="@+id/imageButton17"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/accountbtn" />
+
+    <Button
+        android:id="@+id/accountbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton18"
+        android:layout_alignEnd="@+id/bookingbtn"
+        android:layout_alignLeft="@+id/bookingbtn"
+        android:layout_alignRight="@+id/bookingbtn"
+        android:layout_alignStart="@+id/bookingbtn"
+        android:layout_alignTop="@+id/imageButton18"
+        android:text="ACCOUNT" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_toLeftOf="@+id/imageButton18"
+        android:layout_toStartOf="@+id/imageButton18"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon"
+        android:layout_above="@+id/imageButton14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="© Made by Premal Singh and Sai Shourie"
+        android:layout_above="@+id/floatingActionButton"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
