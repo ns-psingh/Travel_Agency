@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.premal2.travelagency.pwdchange">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="© Made by Premal Singh and Sai Shourie" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@mipmap/icon" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView32"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:fontFamily="serif"
+        android:text="Changing Password"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="23dp"
+        android:text="Old Password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/oldpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_toRightOf="@+id/textView32"
+        android:layout_toEndOf="@+id/textView32"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView32"
+        android:layout_marginTop="29dp"
+        android:text="New Password"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Re-type new password"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/oldpw"
+        android:layout_toStartOf="@+id/oldpw" />
+
+    <EditText
+        android:id="@+id/pw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignTop="@+id/textView33"
+        android:layout_alignLeft="@+id/oldpw"
+        android:layout_alignStart="@+id/oldpw" />
+
+    <EditText
+        android:id="@+id/pw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignLeft="@+id/pw1"
+        android:layout_alignStart="@+id/pw1" />
+
+    <Button
+        android:id="@+id/changepwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pw2"
+        android:layout_marginTop="27dp"
+        android:text="Change Password" />
+</RelativeLayout>

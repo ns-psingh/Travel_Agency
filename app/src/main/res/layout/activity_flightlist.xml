@@ -118,10 +118,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bangalore to Bombay                                                    $99\n Departure Time: 2:30    Arrival Time 3:45"
+        android:layout_marginBottom="11dp"
         android:layout_above="@+id/option9"
         android:layout_alignLeft="@+id/option9"
-        android:layout_alignStart="@+id/option9"
-        android:layout_marginBottom="11dp" />
+        android:layout_alignStart="@+id/option9" />
 
     <TextView
         android:id="@+id/option9"

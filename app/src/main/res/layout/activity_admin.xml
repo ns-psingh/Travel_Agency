@@ -50,32 +50,19 @@
         android:layout_marginTop="29dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="80px"
-        android:layout_height="80px"
-        android:background="@color/colorPrimary"
-        app:srcCompat="@drawable/ic_menu_manage"
-        android:layout_below="@+id/imageButton2"
-        android:layout_alignLeft="@+id/imageButton2"
-        android:layout_alignStart="@+id/imageButton2"
-        android:layout_marginTop="36dp" />
-
-    <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="80px"
         android:layout_height="80px"
         android:background="@color/colorPrimary"
         app:srcCompat="@android:drawable/ic_lock_power_off"
-        android:layout_below="@+id/imageButton3"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3"
-        android:layout_marginTop="30dp" />
+        android:layout_alignTop="@+id/adminlogout"
+        android:layout_toLeftOf="@+id/adminlogout"
+        android:layout_toStartOf="@+id/adminlogout" />
 
     <Button
         android:id="@+id/adminenq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageButton"
@@ -95,34 +82,22 @@
         android:layout_alignStart="@+id/adminenq"
         android:layout_alignTop="@+id/imageButton2"
         android:background="@color/colorPrimary"
-        android:text="ACCOUNTS"
-        android:textColor="@android:color/background_light" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageButton3"
-        android:layout_toRightOf="@+id/imageButton3"
-        android:background="@color/colorPrimary"
-        android:text="SETTINGS"
+        android:text="add a flight"
         android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/adminlogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton4"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageButton4"
-        android:layout_toRightOf="@+id/imageButton4"
         android:background="@color/colorPrimary"
         android:text="LOGOUT"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
 
     <ImageView
         android:id="@+id/imageView7"

@@ -16,6 +16,7 @@ public class flightgraph {
         f.returntime=rett;
         f.day=day;
         f.dest=des;
+        f.fare=(Integer)((rett-dept)*40+f.bookings*100)*1.18;
         graph.adjListArray[src].addLast(f);
     }
     flightgraph()

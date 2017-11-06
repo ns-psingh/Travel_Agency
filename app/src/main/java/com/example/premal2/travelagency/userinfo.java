@@ -14,6 +14,8 @@ public class userinfo {
     int date;
     int month;
     int year;
+    int accountbal;
+    LinkedList<flightdetail> bookings=new LinkedList<flightdetail>();
     LinkedList<String> mes= new LinkedList<String>();
     LinkedList<Integer> sender= new LinkedList<Integer>();
     userinfo()
@@ -31,9 +33,9 @@ public class userinfo {
         this.username= username;
         this.password= password;
         this.date=date;
-        this.date=month;
+        this.month=month;
         this.year=year;
-
+        this.accountbal=0;
     }
 
 }

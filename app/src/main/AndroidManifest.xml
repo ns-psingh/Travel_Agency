@@ -30,7 +30,12 @@
         <activity android:name=".enquiry" />
         <activity android:name=".admin" />
         <activity android:name=".accounts_user" />
-        <activity android:name=".flightlist"></activity>
+        <activity android:name=".flightlist" />
+        <activity android:name=".addmoney" />
+        <activity android:name=".bookflight" />
+        <activity android:name=".pwdchange" />
+        <activity android:name=".mybookings" />
+        <activity android:name=".addflight"></activity>
     </application>
 
 </manifest>

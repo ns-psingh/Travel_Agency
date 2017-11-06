@@ -14,23 +14,7 @@ import java.util.Iterator;
 
 public class flightlist extends MainActivity {
 
-    private String city(int c)
-    {
-        switch (c)
-        {
-            case 0:return ("Ahemdabad");
-            case 1:return ("Bangalore");
-            case 2:return ("Bombay");
-            case 3:return ("Calcutta");
-            case 4:return ("Chennai");
-            case 5:return ("Delhi");
-            case 6:return ("Hyderabad");
-            case 7:return ("Indore");
-            case 8:return ("Ranchi");
-            case 9:return ("Goa");
-        }
-        return ("");
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,11 +64,22 @@ public class flightlist extends MainActivity {
         }*/
        // Toast.makeText(getApplicationContext(),itr.next().departtime+"", Toast.LENGTH_SHORT).show();
         int i=0;
-        for(flightdetail p: GRAPH.graph.adjListArray[source])
+        for(final flightdetail p: GRAPH.graph.adjListArray[source])
         {
+
             if((p.dest==dest)&&(p.day==deptday))
-            {option[i].setText(city(source)+" to "+city(dest)+"                                                 ₹5000\n Departure Time: "+p.departtime+"    Arrival Time "+p.returntime);
-            i++;
+            {
+                option[i].setText(city(source)+" to "+city(dest)+"                                                 ₹"+p.fare+"\n Departure Time: "+p.departtime/100+":"+p.departtime%100+"    Arrival Time "+p.returntime/100+":"+p.returntime%100);
+            option[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dtime=p.departtime;
+                    rtime=p.returntime;
+                    flightfare=p.fare;
+                    startActivity(new Intent(flightlist.this,bookflight.class));
+                }
+            });
+                i++;
             }
         }
         //Toast.makeText(getApplicationContext(),c+"", Toast.LENGTH_SHORT).show();

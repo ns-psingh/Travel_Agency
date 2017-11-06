@@ -20,6 +20,13 @@ public class home extends MainActivity {
         name.setText("Welcome "+current.name+" to the Travel Agency App!");
         Button flight= (Button) findViewById(R.id.flightbtn);
         Button account= (Button) findViewById(R.id.accountbtn);
+        Button bookingbtn=(Button) findViewById(R.id.bookingbtn);
+        bookingbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(home.this,mybookings.class));
+            }
+        });
         flight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

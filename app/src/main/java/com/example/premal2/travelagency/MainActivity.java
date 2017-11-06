@@ -25,7 +25,26 @@ public class MainActivity extends AppCompatActivity {
     static public int dest;
     static public int deptday;
     static public int retday;
+    static public int dtime,rtime;
+    static public double flightfare;
     static public flightgraph GRAPH= new flightgraph();
+    public String city(int c)
+    {
+        switch (c)
+        {
+            case 0:return ("Ahemdabad");
+            case 1:return ("Bangalore");
+            case 2:return ("Bombay");
+            case 3:return ("Calcutta");
+            case 4:return ("Chennai");
+            case 5:return ("Delhi");
+            case 6:return ("Hyderabad");
+            case 7:return ("Indore");
+            case 8:return ("Ranchi");
+            case 9:return ("Goa");
+        }
+        return ("");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

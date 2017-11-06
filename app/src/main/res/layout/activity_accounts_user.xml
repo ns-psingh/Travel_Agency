@@ -60,7 +60,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/balanceno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView19"
@@ -71,14 +71,88 @@
         android:textColor="@android:color/background_dark"
         android:textSize="36sp" />
 
-    <TextView
-        android:id="@+id/textView21"
+    <Button
+        android:id="@+id/addmoneybtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:textColor="@android:color/background_dark"
-        android:textSize="36sp"
-        android:layout_alignBaseline="@+id/textView20"
-        android:layout_alignBottom="@+id/textView20"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignBaseline="@+id/balanceno"
+        android:layout_alignBottom="@+id/balanceno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:text="Add money"
+        android:textColor="?android:attr/colorBackground" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Name"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Email Id"
+        android:layout_below="@+id/uname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/uuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uid"
+        android:layout_alignStart="@+id/uid"
+        android:layout_below="@+id/uid"
+        android:layout_marginTop="26dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/udob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Date Of Birth"
+        android:layout_below="@+id/uuser" />
+
+    <Button
+        android:id="@+id/changepwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/udob"
+        android:layout_marginTop="16dp"
+        android:text="Change Password" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/backbtnacuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uid"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/uid"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backbtnacuser"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 </RelativeLayout>

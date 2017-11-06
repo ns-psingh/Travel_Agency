@@ -10,8 +10,10 @@ public class flightdetail {
     public int day;
     public int dest;
     public int bookings;
+    public double fare;
     flightdetail()
     {
         bookings=0;
+        fare=0;
     }
 }
