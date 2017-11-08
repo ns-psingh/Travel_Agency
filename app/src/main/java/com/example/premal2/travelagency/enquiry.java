@@ -80,7 +80,6 @@ public class enquiry extends MainActivity {
                                 curr = head.next;
                                 while (curr.next != head) {
                                     curr = curr.next;
-                                    Log.d("tag", "fuckk");
                                 }
 
                                 if(curr.data.username!=temp.data.username)

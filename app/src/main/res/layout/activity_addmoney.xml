@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.premal2.travelagency.addmoney">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="© Made by Premal Singh and Sai Shourie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
@@ -93,13 +103,13 @@
         android:id="@+id/addmon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/amount"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="48dp"
+        android:text="ADD"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/amount"
+        android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3"
-        android:layout_marginBottom="17dp"
-        android:text="ADD" />
+        android:layout_alignRight="@+id/amount"
+        android:layout_alignEnd="@+id/amount" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton2"

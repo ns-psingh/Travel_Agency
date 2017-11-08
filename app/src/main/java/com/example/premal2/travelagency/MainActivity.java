@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     static public int dtime,rtime;
     static public double flightfare;
     static public flightgraph GRAPH= new flightgraph();
+    static public Stack<Intent> intent_stack=new Stack<Intent>();
     public String city(int c)
     {
         switch (c)
@@ -98,7 +100,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(euser.getText().toString().equals("admin123")&&epass.getText().toString().equals("admin123"))
                 {
-                    startActivity(new Intent(MainActivity.this,admin.class));
+                    intent_stack.push(new Intent(MainActivity.this,admin.class));
+                    startActivity(intent_stack.peek());
                 }
                 }
             }

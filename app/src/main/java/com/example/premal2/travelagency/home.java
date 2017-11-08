@@ -20,18 +20,12 @@ public class home extends MainActivity {
         name.setText("Welcome "+current.name+" to the Travel Agency App!");
         Button flight= (Button) findViewById(R.id.flightbtn);
         Button account= (Button) findViewById(R.id.accountbtn);
-        Button bookingbtn=(Button) findViewById(R.id.bookingbtn);
-        bookingbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(home.this,mybookings.class));
-            }
-        });
         flight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(home.this,flightselect.class);
-                startActivity(intent);
+                intent_stack.push(intent)
+                startActivity(intent_stack.peek());
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
         });
@@ -39,9 +33,16 @@ public class home extends MainActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(home.this,accounts_user.class);
-                startActivity(intent);
+                intent_stack.push(intent)
+                startActivity(intent_stack.peek());
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
         });
+
+
+
+    }
+    public void onBackPressed() {
+        // Do Here what ever you want do on back press;
     }
 }

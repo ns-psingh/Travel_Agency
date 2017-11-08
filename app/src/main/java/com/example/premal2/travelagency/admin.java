@@ -45,6 +45,7 @@ public class admin extends MainActivity {
 
         }
         Button manage= (Button) findViewById(R.id.adminenq);
+
         manage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

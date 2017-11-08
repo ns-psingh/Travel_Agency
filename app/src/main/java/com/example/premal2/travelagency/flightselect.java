@@ -215,7 +215,7 @@ public class flightselect extends MainActivity {
                 if(retdayS.equals("Saturday"))
                     retday=6;
 
-                Toast.makeText(getApplicationContext(), source+" "+dest+" "+deptday+" "+retday, Toast.LENGTH_SHORT).show();
+        //        Toast.makeText(getApplicationContext(), source+" "+dest+" "+deptday+" "+retday, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(flightselect.this,flightlist.class));
             }
         });

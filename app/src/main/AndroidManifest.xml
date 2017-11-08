@@ -34,8 +34,6 @@
         <activity android:name=".addmoney" />
         <activity android:name=".bookflight" />
         <activity android:name=".pwdchange" />
-        <activity android:name=".mybookings" />
-        <activity android:name=".addflight"></activity>
     </application>
 
 </manifest>
