@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "409372086255",
+    "firebase_url": "https://travel-agency-app.firebaseio.com",
+    "project_id": "travel-agency-app",
+    "storage_bucket": "travel-agency-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409372086255:android:4326e042a0d6fe91",
+        "android_client_info": {
+          "package_name": "com.example.premal2.travelagency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409372086255-hv77orj6iuuqqfbfvltob0sg88fkurdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPi5wZZMrd3ySYN5xJbCZsoZr7tnB-a5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -100,8 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(euser.getText().toString().equals("admin123")&&epass.getText().toString().equals("admin123"))
                 {
-                    intent_stack.push(new Intent(MainActivity.this,admin.class));
-                    startActivity(intent_stack.peek());
+                    startActivity(new Intent(MainActivity.this, admin.class));
                 }
                 }
             }

@@ -24,7 +24,7 @@ public class home extends MainActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(home.this,flightselect.class);
-                intent_stack.push(intent)
+                intent_stack.push(intent);
                 startActivity(intent_stack.peek());
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
@@ -33,7 +33,7 @@ public class home extends MainActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(home.this,accounts_user.class);
-                intent_stack.push(intent)
+                intent_stack.push(intent);
                 startActivity(intent_stack.peek());
                 overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
             }
